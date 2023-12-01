@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Login</h2>
+    <div class="row mt-4">
+        <div class="col">UserName</div>
+        <div class="col"><input type="text" name="userName" [(ngModel)]="userName" class="form-control"/></div>
+    </div>
+    <div class="row mt-4">
+        <div class="col">Password</div>
+        <div class="col"><input type="text" name="password" [(ngModel)]= "password" class="form-control"/></div>
+    </div>
+    <div class="row mt-4">
+        <div class="col"></div>
+        <div class="col">
+            <button type="button" class="btn btn-success mr-4" (click)="validateLogin()">Login</button>
+            <button type="button" class="btn btn-secondary" (click)="resetData()">Cancel</button>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col">{{msg}}</div>
+    </div>
+</div>

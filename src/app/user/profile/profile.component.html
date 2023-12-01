@@ -1,0 +1,37 @@
+<div class="container">
+    <h2>User Profile</h2>
+    <div class="row">
+        <div class="col">Name</div>
+        <div class="col">{{userName}}</div>
+    </div>
+    <div class="row">
+        <div class="col">Mobile</div>
+        <div class="col">{{mobile}}</div>
+    </div>
+    <div class="row">
+        <div class="col">Email</div>
+        <div class="col">{{email}}</div>
+    </div>
+    <!-- <div class="row">
+        <div class="col">Account No</div>
+        <div class="col">{{bankName}} / {{accNo}}</div>
+    </div>
+    <div class="row">
+        <div class="col">Balance</div>
+        <div class="col">{{balance}}</div>
+    </div> -->
+    <div *ngFor="let acc of accounts; let idx = index;">
+        <div class="row">
+            <div class="col">Account {{idx+1}}</div>
+            <div class="col">{{acc.bankName}} / {{acc.accNo}}</div>
+        </div>
+        <div class="row">
+            <div class="col">Balance</div>
+            <div class="col">{{acc.balance}}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"><a [routerLink]="addAccLink">Add Account</a></div>
+    </div>
+</div>

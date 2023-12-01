@@ -1,0 +1,33 @@
+<div class="container">
+    <h2>Register</h2>
+    <div class="row mt-4">
+        <div class="col">Name</div>
+        <div class="col"><input type="text" name="userName" [(ngModel)]="userName" class="form-control"/></div>
+    </div>
+    <div class="row mt-4">
+        <div class="col">Mobile</div>
+        <div class="col"><input type="text" name="mobile" [(ngModel)]="mobile" class="form-control"/></div>
+    </div>
+    <div class="row mt-4">
+        <div class="col">Email</div>
+        <div class="col"><input type="text" name="email" [(ngModel)]="email" class="form-control"/></div>
+    </div>
+    <div class="row mt-4">
+        <div class="col">Password</div>
+        <div class="col"><input type="password" name="pswd" [(ngModel)]="password" class="form-control"/></div>
+    </div>
+    <div class="row mt-4">
+        <div class="col">Confirm Password</div>
+        <div class="col"><input type="password" name="cfpswd" [(ngModel)]="cfPassword" class="form-control"/></div>
+    </div>
+    <div class="row mt-4">
+        <div class="col"></div>
+        <div class="col">
+            <button type="button" class="btn btn-success" (click)="registerUser()">Register</button>
+            <button type="button" class="btn btn-secondary" (click)="resetFormFields()">Cancel</button>
+        </div>
+    </div>
+    <div class="row">
+        <p>{{msg}}</p>
+    </div>
+</div>
