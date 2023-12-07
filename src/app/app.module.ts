@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './landingPage/header/header.component';
 import { FooterComponent } from './landingPage/footer/footer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { FooterComponent } from './landingPage/footer/footer.component';
     CardComponent,
     AddAccountComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+  
   ],
   imports: [
     BrowserModule,
