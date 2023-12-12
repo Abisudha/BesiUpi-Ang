@@ -1,1 +1,31 @@
-<p>card works!</p>
+<div class="container">
+    <h2>Card</h2>
+    <div class="row">
+        <div class="col">Mobile</div>
+        <div class="col"><input type="text" class="form-control" name="mobile" [(ngModel)]="mobile"/></div>
+    </div>
+    <div class="row">
+        <div class="col">Image Name</div>
+        <div class="col"><input type="text" class="form-control" name="imgName" [(ngModel)]="imgName"/></div>
+    </div>
+    <div class="row">
+        <div class="col">Available</div>
+        <div class="col"><input type="text" class="form-control" name="imgStatus" [(ngModel)]="imgStatus"/></div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Card</h2>
+    <div class="row">
+        <div class="col">Mobile</div>
+        <div class="col">{{profileRecord.mobile}}</div>
+    </div>
+    <div class="row">
+        <div class="col">Image Name</div>
+        <div class="col"><img [src]="profileRecord.imgName"/></div>
+    </div>
+    <div class="row">
+        <div class="col">Available</div>
+        <div class="col"><input type="text" class="form-control" name="imgStatus" [(ngModel)]="imgStatus"/></div>
+    </div>
+</div>
