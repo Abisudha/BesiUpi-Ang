@@ -12,10 +12,13 @@ import { StatementComponent } from './user/statement/statement.component';
 import { TransferComponent } from './transaction/transfer/transfer.component';
 import { CardComponent } from './transaction/card/card.component';
 import { AddAccountComponent } from './transaction/add-account/add-account.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './landingPage/header/header.component';
 import { FooterComponent } from './landingPage/footer/footer.component';
+import { MerchantComponent } from './user/merchant/merchant.component';
+import { AddMerchantComponent } from './user/merchant/add-merchant/add-merchant.component';
+import { ViewMerchantComponent } from './user/merchant/view-merchant/view-merchant.component';
 
 
 @NgModule({
@@ -32,13 +35,17 @@ import { FooterComponent } from './landingPage/footer/footer.component';
     AddAccountComponent,
     HeaderComponent,
     FooterComponent,
+    MerchantComponent,
+    AddMerchantComponent,
+    ViewMerchantComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

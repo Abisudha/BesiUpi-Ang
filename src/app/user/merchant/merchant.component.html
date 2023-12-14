@@ -1,0 +1,18 @@
+
+<div class="container">
+    <h2>Merchant Dashboard</h2>
+    <div class="row">
+        <div class="col">
+            <img src="../../../assets/images/merchantAdd.PNG" (click)="onMerchantAction('add')"/>
+        </div>
+        <div class="col">
+            <img src="../../../assets/images/merchantView.png" (click)="onMerchantAction('view')"/>
+        </div>
+    </div>
+    <div class="row mt-4" *ngIf="addMerchantSelection">
+        <app-add-merchant></app-add-merchant>
+    </div>
+    <div class="row mt-4" *ngIf="viewMerchantSelection">
+        <app-view-merchant></app-view-merchant>
+    </div>
+</div>

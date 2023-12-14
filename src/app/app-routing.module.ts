@@ -8,6 +8,9 @@ import { AddAccountComponent } from './transaction/add-account/add-account.compo
 import { CardComponent } from './transaction/card/card.component';
 import { TransferComponent } from './transaction/transfer/transfer.component';
 import { StatementComponent } from './user/statement/statement.component';
+import { MerchantComponent } from './user/merchant/merchant.component';
+import { AddMerchantComponent } from './user/merchant/add-merchant/add-merchant.component';
+import { ViewMerchantComponent } from './user/merchant/view-merchant/view-merchant.component';
 
 const routes: Routes = [
   {path: '', component:LoginComponent},
@@ -17,7 +20,10 @@ const routes: Routes = [
   {path: 'addAccount', component:AddAccountComponent},
   {path: 'card', component:CardComponent},
   {path: 'transfer', component:TransferComponent},
-  {path: 'statement', component:StatementComponent}
+  {path: 'statement', component:StatementComponent},
+  {path: 'merchant', component: MerchantComponent},
+  {path: 'addMerchant', component:AddMerchantComponent},
+  {path: 'viewMerchant', component:ViewMerchantComponent}
 ];
 
 @NgModule({

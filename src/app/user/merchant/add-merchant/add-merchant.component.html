@@ -1,0 +1,28 @@
+<div class="container" *ngIf="!isMerchantSubmitted">
+    <h2>Add Merchant</h2>
+    <form [formGroup]="merchantForm" (ngSubmit)="onMerchantSubmit()">
+        <div class="row mt-4">
+            <div class="col">Merchant Name</div>
+            <div class="col"><input type="text" name="mrName" formControlName="mrName" class="form-control" /></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">Shop No</div>
+            <div class="col"><input type="text" name="mrNo" formControlName="mrNo" class="form-control" /></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">Merchant Addres</div>
+            <div class="col"><input type="text" name="mrAddr" formControlName="mrAddr"  class="form-control"/></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">Merchant Contact</div>
+            <div class="col"><input type="text" name="mrContact" formControlName="mrContact" class="form-control" /></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col"></div>
+            <div class="col"><input type="submit" value="Register" class="btn btn-success" /></div>
+        </div>
+    </form>
+</div>
+<div *ngIf="isMerchantSubmitted">
+    <app-view-merchant [merchantForm]="merchantForm"></app-view-merchant>
+</div>
